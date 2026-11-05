@@ -6,4 +6,4 @@ if not exist ".venv\Scripts\python.exe" (
     exit /b 1
 )
 set PYTHONDONTWRITEBYTECODE=1
-".venv\Scripts\python.exe" -B -m streamlit run app.py
+".venv\Scripts\python.exe" -B -m streamlit run streamlit_app.py

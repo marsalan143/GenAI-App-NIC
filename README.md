@@ -16,7 +16,7 @@ There are exactly two Streamlit pages. All AI features are stages inside the gen
 ## Files to explain
 | File or folder | Purpose |
 |---|---|
-| `app.py` | Starts the app and registers the two pages. |
+| `streamlit_app.py` | Starts the app and registers the two pages. |
 | `pages/landing.py` | Welcome page and navigation button. |
 | `pages/generator.py` | Input, concepts, plan, feasibility, interview and export interface. |
 | `services/groq_service.py` | Groq text generation, voice transcription and API errors. |
@@ -53,7 +53,7 @@ GROQ_TRANSCRIPTION_MODEL=whisper-large-v3-turbo
 Start by double-clicking `run_app.bat`, or run:
 
 ```powershell
-.\.venv\Scripts\python.exe -B -m streamlit run app.py
+.\.venv\Scripts\python.exe -B -m streamlit run streamlit_app.py
 ```
 
 Open http://localhost:8501. The generator also opens directly at http://localhost:8501/generator. Restart after changing credentials. Microphone access requires browser permission and localhost or HTTPS. Record a short clip under 24 MB, transcribe it, review the editable text, then generate concepts. Generated plans and PDFs are in English.

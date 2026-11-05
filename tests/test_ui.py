@@ -14,7 +14,7 @@ def stage(app, name):
     assert not app.exception
 
 def test_landing_renders():
-    app = AppTest.from_file(str(ROOT / 'app.py'), default_timeout=20).run()
+    app = AppTest.from_file(str(ROOT / 'streamlit_app.py'), default_timeout=20).run()
     assert not app.exception
     assert button(app, 'Start Building My Startup')
 
